@@ -1,0 +1,174 @@
+/* Import fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Lobster|Cabin:400,700");
+
+/* General Styles */
+body {
+  font-family: "Cabin", Arial, sans-serif;
+  color: #333;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+.navbar {
+  background-color: #1a2421;
+  border-color: #090909;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-brand {
+  font-family: 'Lobster', cursive;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-toggler {
+  color: white;
+  border-color: white;
+}
+
+/* Navigation Styles */
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+  font-weight: bold;
+}
+
+/* Question Cards Styles */
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 15px 0;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1a2421;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* User Information Styles */
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Tags Styles */
+.tag {
+  background-color: #0077cc;
+  color: #fff;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #1a2421;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Links Styles */
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Custom Styles */
+.header-content {
+  margin-top: 80px;
+}
+
+/* Jumbotron Styles */
+.jumbotron.text-center {
+  margin-top: 80px;
+  background: linear-gradient(135deg, #FF5733, #E82414);
+  color: #fff;
+  padding: 20px; /* Reduced padding for a smaller card */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Jumbotron Title Styles */
+.jumbotron .display-4 {
+  font-size: 30px; /* Reduced font size for the title */
+  font-weight: bold;
+  margin-bottom: 10px; /* Reduced spacing between title and content */
+  text-transform: uppercase;
+}
+
+/* Jumbotron Subtitle Styles */
+.jumbotron .lead {
+  font-size: 18px; /* Reduced font size for the subtitle */
+  font-weight: 300;
+}
+
+/* Jumbotron Border Styles */
+.jumbotron hr {
+  border-top: 2px solid #fff;
+  margin-top: 10px; /* Reduced spacing above the separator */
+  margin-bottom: 10px; /* Reduced spacing below the separator */
+}
+
+
+/* Search Bar Styles */
+.form-inline .form-control.custom-search-input {
+  width: 500px;
+  margin-right: 10px;
+}
+
+/* Navbar Link Hover Styles */
+.nav-link:hover {
+  background-color: rgb(0, 0, 0);
+  border-radius: 8px;
+  color: #fff;
+}
+
+/* Primary Button Styles */
+.btn-primary {
+  background-color: #ad1d28;
+  border-color: #911821;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #911821;
+  border-color: #ad1d28;
+}
+
+
+

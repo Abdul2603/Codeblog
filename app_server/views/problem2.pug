@@ -1,0 +1,83 @@
+extends layout
+
+block content
+  .container
+    .row
+      .col-md-8.offset-md-2
+        .jumbotron.text-center
+          h1 Coding Problems
+          p Browse through a collection of coding problems and challenges to test and improve your coding skills.
+
+        //- Example Coding Problems (You can dynamically fetch and display real coding problems here)
+        .coding-problems
+          .problem
+            // Add a unique ID to the problem for targeting with JavaScript
+            a(href="#", class="problem-title", data-target="problem1") 
+              h2 Fibonacci Series using Recursion 
+            // Replace this section with the Python code
+            // Add a custom CSS class to the card element
+            .card.my-custom-card
+              .card-body
+                pre
+                  | # Python program to display the Fibonacci sequence
+                  |
+                  | def recur_fibo(n):
+                  |    if n <= 1:
+                  |        return n
+                  |    else:
+                  |        return(recur_fibo(n-1) + recur_fibo(n-2))
+                  |
+                  | nterms = 10
+                  |
+                  | # check if the number of terms is valid
+                  | if nterms <= 0:
+                  |    print("Please enter a positive integer")
+                  | else:
+                  |    print("Fibonacci sequence:")
+                  |    for i in range(nterms):
+                  |        print(recur_fibo(i))
+
+            p.description This is the answer to the Fibonacci Series using Recursion problem.
+
+        // Comment Section (Properly indented)
+        h3 Comment Section
+        form(id="comment-form", method="post")
+          .form-group
+            label(for="comment") Your Comment:
+            textarea.form-control(name="comment", id="comment", rows="3" placeholder="Enter your comment here" required)
+          // Add margin-bottom for spacing
+          .mb-2
+            button.btn.btn-primary(type="submit") Submit Comment
+
+        // Pre-existing Comments
+        .pre-existing-comments
+          h4 
+          // Comment 1
+          .comment.rounded-border 
+            .comment-header
+              p
+                | User 1
+                small.text-muted
+                  | commented on September 15, 2023
+            .comment-body
+              p
+                | This problem was very helpful!
+          // Apply rounded corners to the comment
+          style.
+            .rounded-border {
+              border: 2px solid black;
+              background-color: orange;
+              padding: 10px;
+              margin-bottom: 10px;
+              border-radius: 10px; // Add rounded corners with a 10px radius
+            }
+          // Comment 2
+          .comment.rounded-border 
+            .comment-header
+              p
+                | User 2
+                small.text-muted
+                  | commented on September 16, 2023
+            .comment-body
+              p
+                | I had some trouble with this problem. Can someone help me?

@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  .container
+    .row
+      .col-md-6.offset-md-3.text-center.d-flex.justify-content-center.align-items-center.min-vh-100
+        // Signup Form
+        .card.mt-4
+          .card-header
+            h3 Sign Up
+          .card-body
+            form(action="/signup", method="POST")
+              .form-group
+                label(for="name") Name
+                input#name.form-control(type="text", name="name", required)
+              .form-group
+                label(for="email") Email
+                input#email.form-control(type="email", name="email", required)
+              .form-group
+                label(for="password") Password
+                input#password.form-control(type="password", name="password", required)
+              .form-group
+                label(for="confirmPassword") Confirm Password
+                input#confirmPassword.form-control(type="password", name="confirmPassword", required)
+              button.btn.btn-primary.mt-3(type="submit") Sign Up

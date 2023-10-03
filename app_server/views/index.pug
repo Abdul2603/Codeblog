@@ -1,0 +1,49 @@
+extends layout
+
+block content
+  .container
+    .row
+      .col-md-8.offset-md-2.header-content
+        .jumbotron.text-center
+          h1 Welcome to DevHub
+          p Your go-to platform for coding, learning, and sharing.
+
+        // Rest of your content...
+
+        .card.mt-4
+          .card-header.text-left(style="margin-bottom: 20px;") Featured Articles
+          .card-body(style="text-align: left;")
+            // Replace with your featured articles or content
+            .article(style="margin-bottom: 20px;")
+              h4(style="border: 2px solid black; border-radius: 10px; padding: 10px; background-color: #ffcc00; display: inline-block;")  Mastering Data Structures and Algorithms: A Comprehensive Guide for Programmers
+              p Author: John Doe
+              p Published on: September 1, 2023
+              div(style="clear: both;")  
+              a.btn.btn-primary.btn-sm(href='#', style="font-size: 12px; margin-right: 10px;") Read More
+            .article(style="margin-bottom: 20px;")
+              h4(style="border: 2px solid black; border-radius: 10px; padding: 10px; background-color: #ffcc00; display: inline-block;") Building Scalable Web Applications with Modern Frontend and Backend Technologies
+              p Author: Jane Smith
+              p Published on: September 2, 2023
+              div(style="clear: both;")  
+              a.btn.btn-primary.btn-sm(href='#', style="font-size: 12px; margin-right: 10px;") Read More
+            // Add more featured articles as needed
+            .article(style="margin-bottom: 20px;")
+              h4(style="border: 2px solid black; border-radius: 10px; padding: 10px; background-color: #ffcc00; display: inline-block;") Effective Debugging Techniques: Finding and Fixing Bugs in Your Code
+              p Author: Erich Gamma
+              p Published on: September 2, 2023
+              div(style="clear: both;")  
+              a.btn.btn-primary.btn-sm(href='#', style="font-size: 12px; margin-right: 10px;") Read More
+
+        .card.mt-4
+          .card-header.text-left(style="margin-bottom: 20px;") Trending Topics
+          .card-body(style="text-align: left;")
+            // Replace with your trending topics or content
+            .topic(style="margin-bottom: 20px;")
+              h4(style="border: 2px solid black; border-radius: 10px; padding: 10px; background-color: #ffcc00; display: inline-block;") Data Structures:
+              div(style="clear: both;") 
+              a.btn.btn-primary.btn-sm(href='#', style="font-size: 12px; margin-right: 10px;") Explore
+            .topic(style="margin-bottom: 20px;")
+              h4(style="border: 2px solid black; border-radius: 10px; padding: 10px; background-color: #ffcc00; display: inline-block;") Object-Oriented Programming (OOP):
+              div(style="clear: both;")  
+              a.btn.btn-primary.btn-sm(href='#', style="font-size: 12px; margin-right: 10px;") Explore
+            // Add more trending topics as needed

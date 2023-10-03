@@ -1,0 +1,47 @@
+extends layout
+
+block content
+  .container
+    .row
+      .col-md-8.offset-md-2
+        .jumbotron.text-center
+          h1 Discussion Forum
+          p Welcome to our discussion forum. Feel free to engage in discussions, ask questions, and share your knowledge with the community.
+
+        //- Discussion Topics (You can dynamically fetch and display real discussions here)
+        .discussion-topics
+          .card.topic-card
+            .card-body
+              h2.card-title.topic-title
+                a(href="#") Topic Title 1
+              p.card-text
+                | Posted by:
+                a(href="#") User1
+              p.date.card-text
+                | Posted on: September 1, 2023
+              p.description.card-text
+                | This is the description of the first discussion topic. You can discuss anything related to it here.
+
+          .card.topic-card
+            .card-body
+              h2.card-title.topic-title
+                a(href="#") Topic Title 2
+              p.card-text
+                | Posted by:
+                a(href="#") User2
+              p.date.card-text
+                | Posted on: September 2, 2023
+              p.description.card-text
+                | This is the description of the second discussion topic. Share your thoughts and questions.
+
+          .card.topic-card
+            .card-body
+              h2.card-title.topic-title
+                a(href="#") Topic Title 3
+              p.card-text
+                | Posted by:
+                a(href="#") User3
+              p.date.card-text
+                | Posted on: September 3, 2023
+              p.description.card-text
+                | Engage in meaningful discussions related to this third topic.

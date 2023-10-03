@@ -1,0 +1,79 @@
+extends layout
+
+block content
+  .container
+    .row
+      .col-md-8.offset-md-2
+        .jumbotron.text-center
+          h1 Coding Problems
+          p Browse through a collection of coding problems and challenges to test and improve your coding skills.
+
+        //- Example Coding Problems (You can dynamically fetch and display real coding problems here)
+        .coding-problems
+          .problem
+            // Add a unique ID to the problem for targeting with JavaScript
+            a(href="#", class="problem-title", data-target="problem1") 
+              h2 Fibonacci Series
+            
+            // Replace this section with the Python code
+            // Add a custom CSS class to the card element
+            .card.my-custom-card
+              .card-body
+                pre
+                  | n = 10
+                  | num1 = 0
+                  | num2 = 1
+                  | next_number = num2
+                  | count = 1
+
+                  | while count <= n:
+                  |   print(next_number, end=" ")
+                  |   count += 1
+                  |   num1, num2 = num2, next_number
+                  |   next_number = num1 + num2
+                  | print()
+            
+            p.description This is the answer to the Fibonacci Series problem.
+
+        // Comment Section (Properly indented)
+        h3 Comment Section
+        form(id="comment-form", method="post")
+          .form-group
+            label(for="comment") Your Comment:
+            textarea.form-control(name="comment", id="comment", rows="3" placeholder="Enter your comment here" required)
+          // Add margin-bottom for spacing
+          .mb-2
+            button.btn.btn-primary(type="submit") Submit Comment
+
+        // Pre-existing Comments
+        .pre-existing-comments
+          h4 
+          // Comment 1
+          .comment.rounded-border 
+            .comment-header
+              p
+                | User 1
+                small.text-muted
+                  | commented on September 15, 2023
+            .comment-body
+              p
+                | This problem was very helpful!
+          // Apply rounded corners to the comment
+          style.
+            .rounded-border {
+              border: 2px solid black;
+              background-color: orange;
+              padding: 10px;
+              margin-bottom: 10px;
+              border-radius: 10px; // Add rounded corners with a 10px radius
+            }
+          // Comment 2
+          .comment.rounded-border 
+            .comment-header
+              p
+                | User 2
+                small.text-muted
+                  | commented on September 16, 2023
+            .comment-body
+              p
+                | I had some trouble with this problem. Can someone help me?

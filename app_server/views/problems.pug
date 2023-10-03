@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  .container
+    .row
+      .col-md-12
+        .jumbotron.text-center
+          h1 Coding Problems
+          p Browse through a collection of coding problems and challenges to test and improve your coding skills.
+
+        //- Example Coding Problems (You can dynamically fetch and display real coding problems here)
+        .coding-problems
+          .problem.card
+            a(href="/problem1") 
+              .card-body
+                h2.card-title Fibonacci Series
+                p.card-text Difficulty: Easy
+                p.card-text.date Published on September 1, 2023
+                p.card-text.description Solve this simple coding problem to get started with algorithms and data structures.
+
+          .problem.card
+            a(href="/problem2") 
+              .card-body
+                h2.card-title Fibonacci Series using 'Recursion'
+                p.card-text Difficulty: Medium
+                p.card-text.date Published on September 2, 2023
+                p.card-text.description This intermediate-level coding challenge will test your problem-solving skills.
+
+          .problem.card
+            a(href="/problem3") 
+              .card-body
+                h2.card-title Tower of Hanoi
+                p.card-text Difficulty: Hard
+                p.card-text.date Published on September 3, 2023
+                p.card-text.description Are you up for a challenging coding problem? Try this advanced problem.
