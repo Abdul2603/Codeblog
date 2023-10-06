@@ -19,31 +19,51 @@ block content
               p Author: John Doe
               p Published on: September 1, 2023
               div(style="clear: both;")  
-              a.btn.btn-primary.btn-sm(href='#', style="font-size: 12px; margin-right: 10px;") Read More
+              a.btn.btn-primary.btn-sm(href='javascript:void(0);', style="font-size: 12px; margin-right: 10px;", onclick="toggleArticle('article1')") Read More
+              // Hidden full article content
+              .full-article#article1(style="display: none;")
+                p This is the full article content for 'Mastering Data Structures and Algorithms: A Comprehensive Guide for Programmers'.
+                p Enhanced Problem-Solving Skills: Proficiency in data structures and algorithms equips programmers with the ability to tackle a wide range of programming challenges efficiently and elegantly.
+                P Career Advancement: A strong foundation in data structures and algorithms is highly sought after by tech companies during interviews and can significantly boost your career prospects.
+                P Code Optimization: Knowing how to choose the right data structure and algorithm can lead to faster and more memory-efficient code, which is essential in today's performance-driven applications.
+                P "Mastering Data Structures and Algorithms: A Comprehensive Guide for Programmers" is an invaluable resource for anyone looking to excel in the field of programming. By delving into the book's comprehensive content, practical examples, and problem-solving exercises, programmers can sharpen their skills, improve their coding efficiency, and embark on a journey towards becoming experts in data structures and algorithms. Whether you're a novice programmer or a seasoned developer, this book serves as a roadmap to unlocking the true potential of your coding prowess.
             .article(style="margin-bottom: 20px;")
               h4(style="border: 2px solid black; border-radius: 10px; padding: 10px; background-color: #ffcc00; display: inline-block;") Building Scalable Web Applications with Modern Frontend and Backend Technologies
               p Author: Jane Smith
               p Published on: September 2, 2023
               div(style="clear: both;")  
-              a.btn.btn-primary.btn-sm(href='#', style="font-size: 12px; margin-right: 10px;") Read More
-            // Add more featured articles as needed
-            .article(style="margin-bottom: 20px;")
-              h4(style="border: 2px solid black; border-radius: 10px; padding: 10px; background-color: #ffcc00; display: inline-block;") Effective Debugging Techniques: Finding and Fixing Bugs in Your Code
-              p Author: Erich Gamma
-              p Published on: September 2, 2023
-              div(style="clear: both;")  
-              a.btn.btn-primary.btn-sm(href='#', style="font-size: 12px; margin-right: 10px;") Read More
+              a.btn.btn-primary.btn-sm(href='javascript:void(0);', style="font-size: 12px; margin-right: 10px;", onclick="toggleArticle('article2')") Read More
+              // Hidden full article content
+              .full-article#article2(style="display: none;")
+                p Frontend Technologies:
+                p This is the full article content for 'Building Scalable Web Applications with Modern Frontend and Backend Technologies'.
+                p React and Angular: These popular frontend JavaScript libraries offer a component-based architecture, making it easier to develop and maintain complex user interfaces. Their reactivity and robust ecosystem make them ideal choices for building responsive and scalable frontend interfaces.
+                p Vue.js: Vue.js provides a lightweight and progressive framework for building web interfaces. It's known for its simplicity and ease of integration, making it a suitable choice for rapidly developing frontend components.
+                p TypeScript: TypeScript, a superset of JavaScript, adds static typing to your code. It helps catch potential errors early in the development process, leading to more reliable and scalable frontend codebases
+                p Backend Technologies:
+                p Node.js: Node.js is a popular choice for building scalable backend services. Its non-blocking, event-driven architecture makes it efficient for handling concurrent requests and real-time applications.
+                p Python (Django/Flask) and Ruby (Ruby on Rails): These backend frameworks offer productivity and scalability. Django and Ruby on Rails, in particular, come with built-in features that help developers create web applications quickly.
+                p Java (Spring Boot) and .NET Core: For enterprise-level scalability and robustness, Java and .NET Core are reliable choices. They offer extensive libraries, security features, and support for building large-scale web applications.
+                p Key Benefits of Modern Technologies:
+                p Performance: Modern frontend libraries and backend frameworks are designed with performance in mind. They leverage advanced techniques such as code splitting, lazy loading, and server-side rendering to optimize load times and overall application performance.
+                p Scalability: These technologies enable horizontal scaling, allowing applications to handle increased traffic by distributing the load across multiple servers or containers. This ensures consistent performance even during traffic spikes.
+                p Developer Productivity: Modern tooling and frameworks come with extensive documentation, vibrant communities, and a plethora of third-party packages and libraries. This accelerates development and simplifies maintenance.
+                p Security: Many modern technologies offer built-in security features and best practices to protect against common web vulnerabilities, ensuring your application is robust and secure.
+                p Real-Time Capabilities: Modern stacks often support real-time features out of the box, enabling developers to build interactive and collaborative applications with ease.
+            
 
-        .card.mt-4
-          .card-header.text-left(style="margin-bottom: 20px;") Trending Topics
-          .card-body(style="text-align: left;")
-            // Replace with your trending topics or content
-            .topic(style="margin-bottom: 20px;")
-              h4(style="border: 2px solid black; border-radius: 10px; padding: 10px; background-color: #ffcc00; display: inline-block;") Data Structures:
-              div(style="clear: both;") 
-              a.btn.btn-primary.btn-sm(href='#', style="font-size: 12px; margin-right: 10px;") Explore
-            .topic(style="margin-bottom: 20px;")
-              h4(style="border: 2px solid black; border-radius: 10px; padding: 10px; background-color: #ffcc00; display: inline-block;") Object-Oriented Programming (OOP):
-              div(style="clear: both;")  
-              a.btn.btn-primary.btn-sm(href='#', style="font-size: 12px; margin-right: 10px;") Explore
-            // Add more trending topics as needed
+            // Add more featured articles as needed
+
+    script(src='/javascripts/bootstrap.min.js')
+    script(src='/javascripts/validation.js')
+
+    // JavaScript function to toggle article visibility
+    script.
+      function toggleArticle(articleId) {
+        var article = document.getElementById(articleId);
+        if (article.style.display === "none") {
+          article.style.display = "block";
+        } else {
+          article.style.display = "none";
+        }
+      }

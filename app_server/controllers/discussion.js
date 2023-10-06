@@ -1,5 +1,5 @@
 const homelist = (req,res) =>
-res.render('discussion', { title: 'Discussions' });
+res.render('discussion', { title: 'Challenges' });
 module.exports = {
     homelist
 };

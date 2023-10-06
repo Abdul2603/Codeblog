@@ -29,4 +29,3 @@ const Article = mongoose.model('Article', articleSchema);
 
 
 module.exports = Article;
-module.exports = User;
