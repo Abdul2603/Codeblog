@@ -1,0 +1,11 @@
+form(action="/submit-solution", method="POST")
+  label(for="problemTitle") Problem Title:
+  select#problemTitle(name="problemTitle")
+    option(value="problem1") Fibonacci Series
+    option(value="problem2") Fibonacci Series using Recursion
+    option(value="problem3") Tower of Hanoi
+
+  label(for="solution") Your Solution:
+  textarea#solution(name="solution", rows="5", cols="40", placeholder="Enter your solution here")
+
+  button(type="submit") Submit Solution

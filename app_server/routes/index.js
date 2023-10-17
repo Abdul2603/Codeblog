@@ -2,8 +2,9 @@
 const express = require('express');
 const router = express.Router();
 // index page
-router.get('/index/', (req, res) => {
-  res.render('index', { title: 'DevHub' });
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: '' });
 });
 
 // Login page
